@@ -1,0 +1,35 @@
+Source: arm-toolchain
+Section: devel
+Priority: extra
+Maintainer: Christian M. Amsüss <chrysn@fsfe.org>
+Standards-Version: 3.9.3
+Build-Depends:
+        flex,
+        bison,
+        libgmp-dev,
+        libmpfr-dev,
+        libncurses5-dev,
+        libmpc-dev,
+        autoconf,
+        texinfo,
+Homepage: https://github.com/esden/summon-arm-toolchain
+#Vcs-Git: git://git.debian.org/collab-maint/#PACKAGE#.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/#PACKAGE#.git;a=summary
+
+Package: gcc-arm-none-eabi
+Architecture: any
+Recommends: arm-none-eabi-libc
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: toolchain for development on bare-bones ARM cortex systems
+ gcc-arm-none-eabi contains all tools required to compile and debug code for
+ embedded ARM systems that don't run Linux.
+ .
+ It includes both the binutils and gcc.
+
+Package: arm-none-eabi-libc
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: gcc-arm-non-eabi
+Description: toolchain for development on bare-bones ARM cortex systems
+ arm-none-eabi-libc contains a standard library for use with gcc-arm-none-eabi.
+ It is used for embedded ARM system that don't run Linux.

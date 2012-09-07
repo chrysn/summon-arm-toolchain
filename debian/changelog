@@ -1,0 +1,5 @@
+arm-toolchain (0) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Christian M. Amsüss <chrysn@fsfe.org>  Fri, 07 Sep 2012 10:44:25 +0200

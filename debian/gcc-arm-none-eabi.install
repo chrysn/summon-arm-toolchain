@@ -1,0 +1,7 @@
+# FIXME: /usr/arm-none-eabi/bin is a subset of /usr/bin with
+# different names. avr ships both, i think we should symlink
+# in one direction or another
+usr/arm-none-eabi/bin
+usr/bin
+/usr/libexec/gcc
+usr/share/man/man1
